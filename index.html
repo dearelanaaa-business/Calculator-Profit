@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi-Pack Revenue Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+
+    <!-- RM8 Pack Input -->
+    <div class="line">
+      <div class="label-text">1. How many RM8 packs did you sell?</div>
+      <input type="number" id="packs8" placeholder="0" />
+    </div>
+
+    <!-- RM3.50 Pack Input -->
+    <div class="line">
+      <div class="label-text">2. How many RM3.50 packs did you sell?</div>
+      <input type="number" id="packs350" placeholder="0" />
+    </div>
+
+    <!-- Custom Price Input -->
+    <div class="line">
+      <div class="label-text">3. Selling price per custom item:</div>
+      <input type="number" id="customPrice" step="0.01" placeholder="0.00" />
+    </div>
+
+    <!-- Custom Quantity Input -->
+    <div class="line">
+      <div class="label-text">4. How many custom items did you sell?</div>
+      <input type="number" id="customQty" placeholder="0" />
+    </div>
+
+    <!-- Base Price per Item -->
+    <div class="line">
+      <div class="label-text">5. Base price per custom item:</div>
+      <input type="number" id="customBasePrice" step="0.01" placeholder="0.00" />
+    </div>
+
+    <!-- Revenue RM8 -->
+    <div class="line">
+      <div class="label-text">6. Revenue from RM8 packs:</div>
+      <input type="text" id="revenue8" readonly placeholder="-" />
+    </div>
+
+    <!-- Revenue RM3.50 -->
+    <div class="line">
+      <div class="label-text">7. Revenue from RM3.50 packs:</div>
+      <input type="text" id="revenue350" readonly placeholder="-" />
+    </div>
+
+    <!-- Revenue from Custom -->
+    <div class="line">
+      <div class="label-text">8. Revenue from custom items:</div>
+      <input type="text" id="revenueCustom" readonly placeholder="-" />
+    </div>
+
+    <!-- Profit per Item -->
+    <div class="line">
+      <div class="label-text">9. Profit per custom item:</div>
+      <input type="text" id="profitPerItem" readonly placeholder="-" />
+    </div>
+
+    <!-- Total Custom Profit -->
+    <div class="line">
+      <div class="label-text">10. Total profit from custom items:</div>
+      <input type="text" id="totalProfitCustom" readonly placeholder="-" />
+    </div>
+
+    <!-- Total Revenue -->
+    <div class="line">
+      <div class="label-text">11. Total revenue (all items):</div>
+      <input type="text" id="totalRevenue" readonly placeholder="-" />
+    </div>
+
+    <!-- Clear Button -->
+    <div class="line">
+      <button id="clearButton">Clear All</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
